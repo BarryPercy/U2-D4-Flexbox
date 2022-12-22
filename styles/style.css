@@ -3,11 +3,13 @@
 body{
     margin:0;
     font-family: 'Inter', sans-serif;
+    background-color: #f5f4f8;
 }
 
 nav {
+    margin-top: 20px;
     margin-right: auto;
-  }
+}
   
   nav .nav-link {
     font-weight: 500;
@@ -27,9 +29,54 @@ nav {
 .card{
     display: flex;
     flex-direction: column;
-    border-radius: 5px;
+    border-radius: 10px;
+    width:35vh;
+    height:50vh;
+    overflow: hidden;
+    margin-left:3vh;
+    background-color: #ffffff;
+    box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
 }
 .card-img{
-    height: 30px;
+    flex-grow:1;
     object-fit: cover;
+}
+.card-h3{
+    flex-grow:1;
+    white-space: normal;
+    padding-left:20px;
+}
+.time-difficulty{
+    flex-grow:1;
+}
+.stars{
+    flex-grow:1;
+}
+.price{
+    flex-grow:1;
+}
+.author{
+    flex-grow:1;
+}
+
+.card-section{
+    margin-top:20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap:wrap;
+}
+.recommend-to-you{
+    display:flex;
+    margin-bottom:20vh;
+}
+
+.most-popular{
+    display:flex;
+    margin-bottom:20vh;
+}
+
+.trending{
+    display:flex;
+    margin-bottom:20vh;
 }
