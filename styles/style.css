@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+body{
+    margin:0;
+    font-family: 'Inter', sans-serif;
+}
+
+nav {
+    margin-right: auto;
+  }
+  
+  nav .nav-link {
+    font-weight: 500;
+    font-size: 20px;
+    padding: 20px;
+    color: #161448;
+    text-decoration: none;
+  }
+  
+  nav .nav-link.active,
+  nav .nav-link:hover {
+  } /* same as below */
+  
+  nav .nav-link:is(.active, :hover):not(div.nav-link) {
+    color: var(--clr-green);
+  }
+.card{
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+}
+.card-img{
+    height: 30px;
+    object-fit: cover;
+}
